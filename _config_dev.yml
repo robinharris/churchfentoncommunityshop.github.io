@@ -1,12 +1,12 @@
 # Site Settings
-title: Start Jekyll
-email: taniarascia@gmail.com
+title: Church Fenton Community Shop
+email: robin@g4giy.uk
 description: >
-  A guide to getting started with Jekyll.
-baseurl: ""
+  Church Fenton Community Shop Site
+baseurl: "/startjekyll/"
 url: "http://localhost:4000"
-twitter_username: taniarascia
-github_username:  taniarascia
+twitter_username: CFCS
+github_username:  robinharris
 # Build Settings
 sass:
   sass_dir: _sass
