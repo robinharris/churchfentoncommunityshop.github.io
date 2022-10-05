@@ -1,0 +1,20 @@
+I"N<ul>
+  <li>Bread</li>
+  <li>Milk</li>
+  <li>Newspapers</li>
+  <li>Groceries</li>
+  <li>Delicattessen</li>
+  <li>Locally made sandwiches</li>
+  <li>Locally made pies and cooked meat</li>
+  <li>Frozen foods</li>
+  <li>Yorkshire specialities</li>
+  <li>Wines and spirits</li>
+  <li>Cigarettes</li>
+</ul>
+
+<p><img src="/startjekyll/images/shop_front2.jpg" alt="CFCS" style=" margin:1px; padding:1px; height: 80vh; width: 60vw" /></p>
+
+<p>&lt;img src=”/startjekyll/images/chillis.jpg”
+    alt=”chillis”
+    style=”width:120px height:120ppx float:right margin:20px padding:10px&gt;</p>
+:ET
