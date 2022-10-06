@@ -3,7 +3,7 @@ layout: page
 title: Services
 permalink: /services/
 ---
-![daffodils](/startjekyll/images/daffodils.jpg){: style="width:500px; height:330px; float:left; margin:50px;"}
+![daffodils](images/daffodils.jpg){: style="width:500px; height:330px; float:left; margin:50px;"}
 * Newspapers
 * Post Office two mornings each week
 * Food bank donations
