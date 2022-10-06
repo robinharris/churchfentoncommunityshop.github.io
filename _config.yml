@@ -4,7 +4,11 @@ email: robin@g4giy.uk
 description: >
   A guide to getting started with Jekyll.
 baseurl: "/cfcs"
+<<<<<<< HEAD
 url: "https://robinharris.github.io/cfcs"
+=======
+url: "https://robinharris.github.io"
+>>>>>>> eb0a5ab186ebc86d3327ced6ed56b56e0a92338d
 twitter_username: robinharris
 github_username:  robinharris
 # Build Settings
