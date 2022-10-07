@@ -3,8 +3,8 @@ title: Church Fenton Community Shop
 email: robin@g4giy.uk
 description: >
   Church Fenton Community Shop Site
-baseurl: "/startjekyll/"
-url: "http://localhost:4000"
+baseurl: ""
+url: "http://localhost:4000/startjekyll/"
 twitter_username: CFCS
 github_username:  robinharris
 # Build Settings
