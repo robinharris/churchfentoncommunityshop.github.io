@@ -19,5 +19,5 @@ We received the **Queen's Award for Volunteering** in 2022 - the highest level o
 
 {:style="text-align:center;}
 ![people](../images/volunteers.jpg){:  width="350px" height="auto" class="img-responsive}
-![people](../images/LL_cake.jpg){: width="350px" height="auto" class="img-responsive}
+[![people](../images/LL_cake.jpg){: width="350px" height="auto" class="img-responsive}](https://bbc.co.uk)
 ![people](../images/babs2.jpg){: width="200" height="auto" class="img-responsive}
