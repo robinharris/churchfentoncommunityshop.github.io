@@ -10,4 +10,4 @@ permalink: /services/
 * Duke of Edinburgh volunteering
 * Charity donation drop offs
 * Prescription requests and deliveries
-{:style="padding-left:100px; color:gray;"}
+{:style="padding-left:100px;"}
