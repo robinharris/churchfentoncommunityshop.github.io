@@ -7,7 +7,6 @@ baseurl: ""
 url: "https://robinharris.github.io/cfcs"
 twitter_username: robinharris
 github_username:  robinharris
-image_set: /images
 # Build Settings
 sass:
   sass_dir: _sass
