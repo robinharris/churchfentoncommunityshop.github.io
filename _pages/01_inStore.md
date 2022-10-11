@@ -16,8 +16,8 @@ permalink: /What's in Store/
 <li>Wines and spirits</li>
 <li>Cigarettes</li>
 </ul>
-<img src="/images/chillis.jpg" alt="Chillis" height="auto" width="220px" class="img-responsive" hspace="40px"/>
-<img src="/images/flowers.jpg" alt="Flowers" height="auto" width="220px" class="img-responsive"/>
+<img src="../images/chillis.jpg" alt="Chillis" height="auto" width="220px" class="img-responsive" hspace="40px"/>
+<img src="../images/flowers.jpg" alt="Flowers" height="auto" width="220px" class="img-responsive"/>
 <br>
 <br>
 
