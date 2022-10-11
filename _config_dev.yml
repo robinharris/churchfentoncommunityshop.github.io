@@ -4,7 +4,7 @@ email: robin@g4giy.uk
 description: >
   Church Fenton Community Shop Site
 baseurl: ""
-url: "http://127.0.0.1"
+url: ""
 twitter_username: CFCS
 github_username:  robinharris
 # Build Settings
