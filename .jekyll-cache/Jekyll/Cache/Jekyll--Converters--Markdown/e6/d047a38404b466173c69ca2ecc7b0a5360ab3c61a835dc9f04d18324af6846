@@ -1,0 +1,25 @@
+I"Ã<ul style="text-align&quot;center;">
+<li>Bread</li>
+<li>Milk</li>
+<li>Newspapers</li>
+<li>Groceries</li>
+<li>Delicattessen</li>
+<li>Locally made sandwiches</li>
+<li>Locally made pies and cooked meat</li>
+<li>Frozen foods</li>
+<li>Yorkshire specialities</li>
+<li>Wines and spirits</li>
+<li>Cigarettes</li>
+</ul>
+<figure>
+<img src="../images/chillis.jpg" alt="Chillis" height="auto" width="200px" class="img-responsive" hspace="40px" />
+<figcaption align="center"><b>Dried Chillis</b></figcaption>
+</figure>
+<figure>
+<img src="../images/flowers.jpg" alt="Flowers" height="auto" width="200px" class="img-responsive" />
+<figcaption align="left"><b>Fresh Flowers</b></figcaption>
+</figure>
+<p><br />
+<br /></p>
+
+:ET
