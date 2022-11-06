@@ -1,0 +1,37 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(93, 134, 111);
+    overflow: hidden;
+    text-align: center;
+    height:50px;
+}
+
+li {
+    display: inline-block;
+    padding:15px 20px;
+}
+
+li a {
+    /* display: block; */
+    color: black;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: bisque;
+}
+
+
+
+// @import 
+// 	"base",
+//   "layout",
+//   "syntax-highlighting"
