@@ -75,12 +75,28 @@ img {
     margin-top: 2em;
 }
 
+.container ul {
+    font-size: 2em;
+    color:var(--shop-color);
+}
+.container li{
+    list-style-type: none;
+    line-height: 2em;
+}
+
+.container p {
+    font-size: 2em;
+    color: var(--shop-color);
+    /* line-height: 2em; */
+}
+
 .grid-container {
     clear:both;
     display:grid;
     gap: 10%;
     grid-template-columns: repeat(3, 1fr);
     padding: 0px 10%;
+    margin-bottom: 10%;
 }
 
 .grid-item {
