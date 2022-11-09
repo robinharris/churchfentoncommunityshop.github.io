@@ -1,34 +1,116 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+/* The defaults go in here */
+body {
+    font-family: Georgia;
+    font-size: 1.25em;
+    color:rgb(60, 57, 57);
+    line-height:1.5em;
+    background-color: antiquewhite;
+    --shop-color:rgb(109, 141, 123);
+}
 
-ul {
+/* Used for the horizontal nav-bar */
+ul#nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color:rgb(93, 134, 111);
+    background-color:var(--shop-color));
     overflow: hidden;
     text-align: center;
     height:50px;
+    display:block;
 }
 
-li {
+#nav-bar li {
     display: inline-block;
     padding:15px 20px;
 }
 
-li a {
-    /* display: block; */
-    color: black;
+#nav-bar li a{
+    color: rgb(60, 57, 57);
     text-align: center;
     padding:14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: bisque;
+    background-color: rgb(59, 100, 123);
+}
+/* =========================================== */
+
+/* general images */
+img {
+    width: 40%;
+    height:auto;
+    margin:0px 50px;
 }
 
+/* puts the logo on top of the image in the top right */
+.lg{
+    position: absolute;
+    right:50px;
+    top: 100px;
+    width: 500px;
+}
+
+/* general use */
+.center {
+    text-align: center;
+}
+
+.left {
+    float:left;
+    width: 40%;
+}
+.right {
+    float:right;
+    width: 50%;
+    padding-left: 10%;
+}
+
+/* for divs that need a top margin */
+.container {
+    margin-top: 2em;
+}
+
+.grid-container {
+    clear:both;
+    display:grid;
+    gap: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 10%;
+}
+
+.grid-item {
+    background-color: var(--shop-color);
+    border: 2px solid green;
+    border-radius: 10%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.grid-item img {
+    min-width: 150px;
+    height:auto;
+}
+
+/* lists */
+ul {
+    list-style-type:"*   ";
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+}
+
+/* image on home page of volunteers  */
+#volunteers {
+    width: 100%;
+    margin:0px 0px 50px 0px;
+    padding: 0;
+}
 
 
 // @import 
