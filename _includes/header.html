@@ -1,22 +1,5 @@
-<aside>
-	<div class="container">
-		<nav>
-			<ul>
-				{% for page in site.pages %} {% if page.title %}
-				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-				{% endif %} {% endfor %}
-				<!-- removed blog from header -->
-				<!-- <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li> -->
-			</ul>
-			</li>
-			</ul>
-		</nav>
-	</div>
-</aside>
-
-<header><h1>
-		<a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}images/logo.png" alt="logo" 
-		 style= " margin-top:18px; padding:10px; height: 20vh; width: 60vw"></a>
-	</h1>
+<header>
+    <div class="grid-item"><img src="{{ site.baseurl }}/images/logo.png" alt=""></div>
+    <div class="grid-item">{{ page.title }}</div>
+    <div class="grid-item"><img src="{{ site.baseurl }}/images/header-img.jpg" alt=""></div>
 </header>
- 

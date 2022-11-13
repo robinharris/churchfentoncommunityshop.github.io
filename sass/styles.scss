@@ -1,0 +1,143 @@
+// Variables
+
+$font-family: Georgia;
+$font-size: 1.2em;
+$color: rgb(60,57,57);
+$background-color: antiquewhite;
+$shop-color:rgb(147,167,156);
+//========================================
+
+
+body {
+    background-color: $background-color;
+    font-family:$font-family;
+    font-size: $font-size;
+    line-height:$font-size;
+    color:$color;
+}
+
+nav {
+    ul {
+        background-color: $shop-color;
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+        overflow: hidden;
+        text-align: center;
+        height: 50px;
+        display: block;
+    }
+    li  {
+        display: inline;
+    }
+    a {
+        color: $color;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        padding:10px 20px;
+        &:hover{
+            background-color:green;
+        }
+    }
+}
+
+header {
+    clear:both;
+    display:grid;
+    gap:2%;
+    grid-template-columns: repeat(3, 1fr);
+    padding:0px 1%;
+    margin-bottom: 10%;
+    background-color: $shop-color;
+    &.grid-item {
+        border:0;
+    }
+}
+
+#home{
+    #logo{
+        position: absolute;
+        right:50px;
+        top:100px;
+        width:500px;
+    }
+    #volunteers{
+        width:100%;
+        margin:0 0 0px 0;
+        padding: 0;
+    }
+}
+
+// General styling classes
+.center{
+    text-align: center;
+}
+.left{
+    float:left;
+    width:35%;
+    margin-left:50px;
+    color:$shop-color;
+    font-size: larger;
+    line-height: normal;
+}
+.right{
+    float:right;
+    width:50%;
+    padding-left:10%;
+}
+img {
+    width:40%;
+    height:auto;
+    margin:0 50px;
+}
+.container {
+    margin-top:2em;
+}
+
+.large-shop-text{
+    font-size: 2em;
+    line-height: $font-size;
+    color: $shop-color;
+}
+
+ul{
+    list-style-type: "*   ";
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 2em;
+    display: inline-block;
+    margin:0;
+}
+
+// used for clickable image links on bottom of home page
+.grid-container {
+    clear: both;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5%;
+    padding:0 10;
+    margin:5% 10%;
+    justify-content: space-between;
+}
+
+.grid-item {
+    background-color: $shop-color;
+    border:2px solid green;
+    border-radius: 10%;
+    text-align: center;
+    padding:10px;
+    margin-top: 50px;
+}
+// ================================================
+table {
+    justify-content: left;
+    margin:auto;
+}
+
+td {
+    text-align: left;
+    padding-right:20px;
+}
+
+
