@@ -33,14 +33,21 @@ nav a:hover {
 header {
   clear: both;
   display: grid;
-  gap: 2%;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0px 1%;
-  margin-bottom: 10%;
-  background-color: rgb(147, 167, 156);
+  background-color: white;
 }
-header.grid-item {
-  border: 0;
+
+.header-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 900;
+  color: rgb(147, 167, 156);
+}
+.header-grid-item > img {
+  width: 100%;
+  height: auto;
 }
 
 #home #logo {
@@ -74,14 +81,13 @@ header.grid-item {
   padding-left: 10%;
 }
 
-img {
+.container {
+  margin-top: 2em;
+}
+.container img {
   width: 40%;
   height: auto;
   margin: 0 50px;
-}
-
-.container {
-  margin-top: 2em;
 }
 
 .large-shop-text {
@@ -126,4 +132,22 @@ table {
 td {
   text-align: left;
   padding-right: 20px;
+}
+
+.products-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5%;
+}
+.products-grid-item {
+  border: 2px solid rgb(147, 167, 156);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: rgb(147, 167, 156);
+}
+.products-grid-item img {
+  width: 350px;
+  height: 280px;
 }/*# sourceMappingURL=styles.css.map */

@@ -45,13 +45,19 @@ nav {
 header {
     clear:both;
     display:grid;
-    gap:2%;
     grid-template-columns: repeat(3, 1fr);
-    padding:0px 1%;
-    margin-bottom: 10%;
-    background-color: $shop-color;
-    &.grid-item {
-        border:0;
+    background-color: white;
+}
+.header-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight:900;
+    color: $shop-color;
+    >img {
+        width:100%;
+        height:auto;
     }
 }
 
@@ -86,13 +92,13 @@ header {
     width:50%;
     padding-left:10%;
 }
-img {
-    width:40%;
-    height:auto;
-    margin:0 50px;
-}
 .container {
     margin-top:2em;
+    img {
+        width:40%;
+        height:auto;
+        margin:0 50px;
+    }
 }
 
 .large-shop-text{
@@ -139,5 +145,29 @@ td {
     text-align: left;
     padding-right:20px;
 }
+
+// grid for products
+.products-grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    margin:5%;
+    &-item {
+        border:2px solid $shop-color;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2em;
+        color: $shop-color;
+        img {
+            width:350px;
+            height:280px;
+        }
+    }
+
+}
+
+
+
+
 
 
