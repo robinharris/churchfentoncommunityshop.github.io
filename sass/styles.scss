@@ -9,7 +9,7 @@ $shop-color:rgb(147,167,156);
 
 
 body {
-    background-color: $background-color;
+    background-color: $shop-color;
     font-family:$font-family;
     font-size: $font-size;
     line-height:$font-size;
@@ -26,6 +26,7 @@ nav {
         text-align: center;
         height: 50px;
         display: block;
+        font-size: smaller;
     }
     li  {
         display: inline;
@@ -128,8 +129,8 @@ ul{
 }
 
 .grid-item {
-    background-color: $shop-color;
-    border:2px solid green;
+    background-color: white;
+    border:2px solid gray;
     border-radius: 10%;
     text-align: center;
     padding:10px;
@@ -151,13 +152,14 @@ td {
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(3,1fr);
-    margin:5%;
+    margin:3%;
+    background-color: $shop-color;
     &-item {
         border:2px solid $shop-color;
         text-align: center;
         font-weight: 800;
         font-size: 1.2em;
-        color: $shop-color;
+        color: white;
         img {
             width:350px;
             height:280px;

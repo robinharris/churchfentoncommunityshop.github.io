@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(147, 167, 156);
   font-family: Georgia;
   font-size: 1.2em;
   line-height: 1.2em;
@@ -15,6 +15,7 @@ nav ul {
   text-align: center;
   height: 50px;
   display: block;
+  font-size: smaller;
 }
 nav li {
   display: inline;
@@ -116,8 +117,8 @@ ul {
 }
 
 .grid-item {
-  background-color: rgb(147, 167, 156);
-  border: 2px solid green;
+  background-color: white;
+  border: 2px solid gray;
   border-radius: 10%;
   text-align: center;
   padding: 10px;
@@ -138,14 +139,15 @@ td {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5%;
+  margin: 3%;
+  background-color: rgb(147, 167, 156);
 }
 .products-grid-item {
   border: 2px solid rgb(147, 167, 156);
   text-align: center;
   font-weight: 800;
   font-size: 1.2em;
-  color: rgb(147, 167, 156);
+  color: white;
 }
 .products-grid-item img {
   width: 350px;
