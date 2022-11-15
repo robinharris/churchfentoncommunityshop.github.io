@@ -1,7 +1,7 @@
 // Variables
 
-$font-family: Georgia;
-$font-size: 1.2em;
+$font-family: 'Dancing Script', cursive;;
+$font-size: 1.6em;
 $color:white;
 $shop-color:rgb(147,167,156);
 $background-color: $shop-color;
@@ -89,7 +89,6 @@ header {
     float:left;
     width:35%;
     margin-left:50px;
-    color:$shop-color;
     font-size: larger;
     line-height: normal;
 }
@@ -131,7 +130,6 @@ ul{
     padding:0 10;
     margin:5% 10%;
     justify-content: space-between;
-    // background-color: $shop-color;
 }
 
 .grid-item {
@@ -141,6 +139,14 @@ ul{
     text-align: center;
     padding:10px;
     margin-top: 50px;
+
+a {
+    text-decoration: none;
+    color:white;
+    :hover{
+        opacity: 0.7;
+    }
+}
 }
 // ================================================
 table {
@@ -233,11 +239,6 @@ td {
         p {
             margin-bottom: 1.3em;
         }
-
-        .cu-grid-item {
-
-        }
-
 }
 //=================================================
 /* Style all font awesome icons */
