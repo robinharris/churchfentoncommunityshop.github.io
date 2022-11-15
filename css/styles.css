@@ -5,6 +5,10 @@ body {
   line-height: 1.2em;
   color: rgb(60, 57, 57);
 }
+body p {
+  padding: 0;
+  margin: 0;
+}
 
 nav ul {
   background-color: rgb(147, 167, 156);
@@ -34,8 +38,8 @@ nav a:hover {
 header {
   clear: both;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: white;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(147, 167, 156);
 }
 
 .header-grid-item {
@@ -44,7 +48,7 @@ header {
   align-items: center;
   font-size: 3em;
   font-weight: 900;
-  color: rgb(147, 167, 156);
+  color: white;
 }
 .header-grid-item > img {
   width: 100%;
@@ -117,7 +121,7 @@ ul {
 }
 
 .grid-item {
-  background-color: white;
+  background-color: rgb(147, 167, 156);
   border: 2px solid gray;
   border-radius: 10%;
   text-align: center;
@@ -152,4 +156,44 @@ td {
 .products-grid-item img {
   width: 350px;
   height: 280px;
+}
+
+.vtr-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 50px;
+  background-color: rgb(147, 167, 156);
+  text-align: center;
+}
+.vtr-grid-container p {
+  margin-bottom: 1.3em;
+}
+.vtr-grid-container .vtr-grid-item-2left {
+  grid-column: 1/span 2;
+  text-align: left;
+  padding: 20px;
+  color: white;
+}
+.vtr-grid-container .vtr-grid-item-1right {
+  grid-column: 3;
+  padding: 20px;
+  color: white;
+}
+.vtr-grid-container .vtr-grid-item-1right img {
+  width: 80%;
+  height: auto;
+}
+.vtr-grid-container .vtr-grid-item-1left {
+  grid-column: 1;
+}
+.vtr-grid-container .vtr-grid-item-1left img {
+  width: 80%;
+  height: auto;
+}
+.vtr-grid-container .vtr-grid-item-2right {
+  grid-column: 2/span 2;
+  padding: 20px;
+  color: white;
+  text-align: left;
 }/*# sourceMappingURL=styles.css.map */
