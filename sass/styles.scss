@@ -218,6 +218,26 @@ td {
         text-align: left;
         }
 }
+//=================================================
+// grid for contact us page
+
+.cu-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin: 50px;
+        background-color: $shop-color;
+        text-align: center;
+    
+        p {
+            margin-bottom: 1.3em;
+        }
+
+        .cu-grid-item {
+            
+        }
+
+}
 
 
 

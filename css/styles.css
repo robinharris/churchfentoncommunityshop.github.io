@@ -196,4 +196,16 @@ td {
   padding: 20px;
   color: white;
   text-align: left;
+}
+
+.cu-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 50px;
+  background-color: rgb(147, 167, 156);
+  text-align: center;
+}
+.cu-grid-container p {
+  margin-bottom: 1.3em;
 }/*# sourceMappingURL=styles.css.map */
