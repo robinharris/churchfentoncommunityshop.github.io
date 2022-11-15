@@ -109,8 +109,8 @@ header {
 
 .large-shop-text{
     font-size: 2em;
-    line-height: $font-size;
-    color: $shop-color;
+    color:white;
+    line-height: 2em;
 }
 
 ul{
@@ -146,6 +146,7 @@ ul{
 table {
     justify-content: left;
     margin:auto;
+    color:white;
 }
 
 td {
@@ -234,7 +235,7 @@ td {
         }
 
         .cu-grid-item {
-            
+
         }
 
 }

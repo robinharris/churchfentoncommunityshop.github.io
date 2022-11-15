@@ -97,8 +97,8 @@ header {
 
 .large-shop-text {
   font-size: 2em;
-  line-height: 1.2em;
-  color: rgb(147, 167, 156);
+  color: white;
+  line-height: 2em;
 }
 
 ul {
@@ -132,6 +132,7 @@ ul {
 table {
   justify-content: left;
   margin: auto;
+  color: white;
 }
 
 td {
