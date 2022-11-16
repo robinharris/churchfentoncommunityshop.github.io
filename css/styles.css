@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(147, 167, 156);
+  background-color: #B3B995;
   font-family: "Dancing Script", cursive;
   font-size: 1.6em;
   line-height: 1.6em;
@@ -11,7 +11,6 @@ body p {
 }
 
 nav ul {
-  background-color: rgb(147, 167, 156);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -32,14 +31,14 @@ nav a {
   padding: 10px 20px;
 }
 nav a:hover {
-  background-color: green;
+  background-color: #787f54;
 }
 
 header {
   clear: both;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: rgb(147, 167, 156);
+  background-color: #B3B995;
 }
 
 .header-grid-item {
@@ -120,7 +119,7 @@ ul {
 }
 
 .grid-item {
-  background-color: rgb(147, 167, 156);
+  background-color: #787f54;
   border: 2px solid gray;
   border-radius: 10%;
   text-align: center;
@@ -151,10 +150,10 @@ td {
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
   margin: 3%;
-  background-color: rgb(147, 167, 156);
+  background-color: #B3B995;
 }
 .products-grid-item {
-  border: 2px solid rgb(147, 167, 156);
+  border: 2px solid #B3B995;
   text-align: center;
   font-weight: 800;
   font-size: 1.2em;
@@ -170,7 +169,7 @@ td {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 50px;
-  background-color: rgb(147, 167, 156);
+  background-color: #B3B995;
   text-align: center;
 }
 .vtr-grid-container p {
@@ -210,7 +209,7 @@ td {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 50px;
-  background-color: rgb(147, 167, 156);
+  background-color: #B3B995;
   text-align: center;
 }
 .cu-grid-container p {

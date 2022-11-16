@@ -3,7 +3,7 @@
 $font-family: 'Dancing Script', cursive;;
 $font-size: 1.6em;
 $color:white;
-$shop-color:rgb(147,167,156);
+$shop-color:#B3B995;
 $background-color: $shop-color;
 //========================================
 
@@ -23,7 +23,7 @@ body {
 
 nav {
     ul {
-        background-color: $shop-color;
+        // background-color: $shop-color;
         list-style-type: none;
         margin: 0;
         padding:0;
@@ -43,7 +43,7 @@ nav {
         text-align: center;
         padding:10px 20px;
         &:hover{
-            background-color:green;
+            background-color:#787f54;
         }
     }
 }
@@ -133,7 +133,7 @@ ul{
 }
 
 .grid-item {
-    background-color: $shop-color;
+    background-color: #787f54;
     border:2px solid gray;
     border-radius: 10%;
     text-align: center;
