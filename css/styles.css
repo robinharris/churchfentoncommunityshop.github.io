@@ -15,7 +15,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  text-align: center;
+  text-align: right;
   height: 50px;
   display: block;
   font-size: smaller;
@@ -159,6 +159,7 @@ td {
   text-align: center;
   font-weight: 800;
   font-size: 1.2em;
+  line-height: 1.2em;
 }
 .products-grid-item img {
   width: 80%;
@@ -167,7 +168,7 @@ td {
 
 .vtr-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 33% 34% 33%;
   gap: 50px;
   margin: 50px;
   background-color: #B3B995;
@@ -179,29 +180,25 @@ td {
 .vtr-grid-container .vtr-grid-item-2left {
   grid-column: 1/span 2;
   text-align: left;
+  padding: 20%;
   padding: 20px;
-  color: white;
 }
 .vtr-grid-container .vtr-grid-item-1right {
   grid-column: 3;
   padding: 20px;
-  color: white;
 }
 .vtr-grid-container .vtr-grid-item-1right img {
-  width: 80%;
-  height: auto;
+  width: 100%;
 }
 .vtr-grid-container .vtr-grid-item-1left {
   grid-column: 1;
 }
 .vtr-grid-container .vtr-grid-item-1left img {
-  width: 80%;
-  height: auto;
+  width: 100%;
 }
 .vtr-grid-container .vtr-grid-item-2right {
   grid-column: 2/span 2;
-  padding: 20px;
-  color: white;
+  padding: 10%;
   text-align: left;
 }
 
