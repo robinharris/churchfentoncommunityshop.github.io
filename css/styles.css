@@ -159,10 +159,10 @@ td {
   text-align: center;
   font-weight: 800;
   font-size: 1.2em;
-  color: white;
 }
 .products-grid-item img {
-  width: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .vtr-grid-container {
