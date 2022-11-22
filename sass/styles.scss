@@ -1,7 +1,8 @@
 // Variables
 
-$font-family: 'Dancing Script', cursive;;
+$font-family: 'Dancing Script', cursive;
 $font-size: 2.5vw;
+$line-height: calc($font-size*2);
 $color:white;
 $shop-color:#B3B995;
 $background-color: $shop-color;
@@ -84,6 +85,7 @@ header {
 // General styling classes
 .center{
     text-align: center;
+    line-height: 1.5em;
 }
 .left{
     float:left;
@@ -106,9 +108,12 @@ header {
 }
 
 .large-shop-text{
-    font-size: 2em;
+    font-size: 1.5em;
     color:white;
-    line-height: 2em;
+}
+
+.small {
+    font-size:0.5em;
 }
 
 ul{
@@ -234,7 +239,7 @@ td {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
-        margin: 50px;
+        margin: 20px;
         background-color: $shop-color;
         text-align: center;
     

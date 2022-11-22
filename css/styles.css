@@ -68,6 +68,7 @@ header {
 
 .center {
   text-align: center;
+  line-height: 1.5em;
 }
 
 .left {
@@ -92,9 +93,12 @@ header {
 }
 
 .large-shop-text {
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
-  line-height: 2em;
+}
+
+.small {
+  font-size: 0.5em;
 }
 
 ul {
@@ -206,7 +210,7 @@ td {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  margin: 50px;
+  margin: 20px;
   background-color: #B3B995;
   text-align: center;
 }
