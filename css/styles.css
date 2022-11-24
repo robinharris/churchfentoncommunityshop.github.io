@@ -1,8 +1,8 @@
 body {
   background-color: #B3B995;
   font-family: "Dancing Script", cursive;
-  font-size: 2.5vw;
-  line-height: 2.5vw;
+  font-size: 1.7rem;
+  line-height: 2.55rem;
   color: white;
 }
 body p {
@@ -12,13 +12,11 @@ body p {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   text-align: right;
-  height: 50px;
+  height: 3rem;
   display: block;
-  font-size: smaller;
+  font-size: 1.7rem;
 }
 nav li {
   display: inline;
@@ -28,7 +26,7 @@ nav a {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 nav a:hover {
   background-color: #787f54;
@@ -37,7 +35,7 @@ nav a:hover {
 header {
   clear: both;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   background-color: #B3B995;
 }
 
@@ -45,25 +43,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
+  font-size: 4.25rem;
   font-weight: 900;
   color: white;
 }
 .header-grid-item > img {
   width: 100%;
   height: auto;
-}
-
-#home #logo {
-  position: absolute;
-  right: 50px;
-  top: 100px;
-  width: 25%;
-}
-#home #volunteers {
-  width: 100%;
-  margin: 0 0 0px 0;
-  padding: 0;
 }
 
 .center {
@@ -73,9 +59,10 @@ header {
 
 .left {
   float: left;
-  width: 25%;
-  margin-left: 50px;
-  line-height: 1.5em;
+  width: 35%;
+  margin-left: 5rem;
+  font-size: 2.38rem;
+  line-height: 2.55rem;
 }
 
 .right {
@@ -84,21 +71,23 @@ header {
   padding-left: 5%;
 }
 
-.container {
-  margin-top: 2em;
+.home-container {
+  margin-top: 2rem;
 }
-.container img {
-  max-width: 80%;
+.home-container img {
+  max-width: 70%;
   margin: 0 5% vh;
 }
 
 .large-shop-text {
-  font-size: 1.5em;
+  font-size: 2.55rem;
   color: white;
 }
 
 .small {
-  font-size: 0.5em;
+  font-size: 1.19rem;
+  line-height: 1.7rem;
+  text-align: left;
 }
 
 ul {
@@ -110,7 +99,7 @@ ul {
   margin: 0;
 }
 
-.grid-container {
+.home-grid {
   clear: both;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -120,7 +109,7 @@ ul {
   justify-content: space-between;
 }
 
-.grid-item {
+.home-item {
   background-color: #787f54;
   border: 2px solid gray;
   border-radius: 10%;
@@ -128,14 +117,14 @@ ul {
   padding: 10px;
   margin-top: 50px;
 }
-.grid-item a {
+.home-item a {
   text-decoration: none;
   color: white;
 }
-.grid-item a :hover {
+.home-item a :hover {
   opacity: 0.7;
 }
-.grid-item img {
+.home-item img {
   max-width: 80%;
   min-width: 80%;
 }
@@ -158,38 +147,46 @@ td {
   margin: 3%;
   background-color: #B3B995;
 }
-.products-grid-item {
-  border: 2px solid #B3B995;
+.products-grid .products-grid-item {
   text-align: center;
   font-weight: 800;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  text-align: center;
 }
-.products-grid-item img {
+.products-grid .products-grid-item img {
   width: 80%;
   height: 80%;
+}
+.products-grid .small {
+  font-size: 1.19rem;
+  line-height: 1.7rem;
+  text-align: left;
+}
+.products-grid p {
+  margin-bottom: 1.02rem;
 }
 
 .vtr-grid-container {
   display: grid;
-  grid-template-columns: 33% 34% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   margin: 50px;
   background-color: #B3B995;
   text-align: center;
+  align-items: center;
 }
 .vtr-grid-container p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1em;
 }
 .vtr-grid-container .vtr-grid-item-2left {
   grid-column: 1/span 2;
   text-align: left;
-  padding: 20%;
   padding: 20px;
+}
+.vtr-grid-container .vtr-grid-item-2left ul {
+  line-height: 1em;
 }
 .vtr-grid-container .vtr-grid-item-1right {
   grid-column: 3;
-  padding: 20px;
 }
 .vtr-grid-container .vtr-grid-item-1right img {
   width: 100%;
@@ -208,26 +205,42 @@ td {
 
 .cu-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.8fr 1.2fr 1fr;
   gap: 50px;
-  margin: 20px;
   background-color: #B3B995;
   text-align: center;
 }
-.cu-grid-container p {
-  margin-bottom: 1.3em;
+
+.cu-email {
+  text-align: right;
+}
+
+footer .footer-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0 5%;
+}
+footer .footer-grid-container .footer-item {
+  text-align: left;
+}
+footer .footer-grid-container .footer-item img {
+  width: 60%;
+}
+footer .footer-grid-container .footer-item h3 {
+  margin: 0;
 }
 
 /* Style all font awesome icons */
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  padding: 12px;
+  font-size: 20px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
+  margin: 5px 2px;
 }
 
-/* Add a hover effect if you want */
+/* Add a hover effect */
 .fa:hover {
   opacity: 0.7;
 }
@@ -239,20 +252,14 @@ td {
   color: white;
 }
 
-footer .footer-grid-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  margin: 50px;
-  gap: 50px;
-  line-height: 2.5rem;
-  font-size: 2.5vw;
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
-footer .footer-grid-container .footer-item {
-  text-align: left;
-}
-footer .footer-grid-container .footer-item img {
-  width: 60%;
-}
-footer .footer-grid-container .footer-item h2 {
-  margin-top: 0;
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

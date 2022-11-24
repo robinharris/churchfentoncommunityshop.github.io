@@ -1,8 +1,8 @@
 // Variables
 
 $font-family: 'Dancing Script', cursive;
-$font-size: 2.5vw;
-$line-height: calc($font-size*2);
+$font-size: 1.7rem;
+$line-height: calc($font-size*1.5);
 $color:white;
 $shop-color:#B3B995;
 $background-color: $shop-color;
@@ -13,7 +13,7 @@ body {
     background-color: $shop-color;
     font-family:$font-family;
     font-size: $font-size;
-    line-height:$font-size;
+    line-height:$line-height;
     color:$color;
 
     p{
@@ -24,15 +24,12 @@ body {
 
 nav {
     ul {
-        // background-color: $shop-color;
         list-style-type: none;
-        margin: 0;
-        padding:0;
         overflow: hidden;
         text-align: right;
-        height: 50px;
+        height: 3rem;
         display: block;
-        font-size: smaller;
+        font-size: $font-size;
     }
     li  {
         display: inline;
@@ -42,7 +39,7 @@ nav {
         text-decoration: none;
         display: inline-block;
         text-align: center;
-        padding:10px 20px;
+        padding:0 20px;
         &:hover{
             background-color:#787f54;
         }
@@ -52,14 +49,14 @@ nav {
 header {
     clear:both;
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     background-color: $shop-color;
 }
 .header-grid-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: calc($font-size * 2.5);
     font-weight:900;
     color: white;
     >img {
@@ -68,19 +65,6 @@ header {
     }
 }
 
-#home{
-    #logo{
-        position: absolute;
-        right:50px;
-        top:100px;
-        width:25%;
-    }
-    #volunteers{
-        width:100%;
-        margin:0 0 0px 0;
-        padding: 0;
-    }
-}
 
 // General styling classes
 .center{
@@ -89,34 +73,37 @@ header {
 }
 .left{
     float:left;
-    width:25%;
-    margin-left:50px;
-    line-height: 1.5em;
-
+    width:35%;
+    margin-left:5rem;
+    font-size: calc($font-size*1.4);
+    line-height: calc($font-size*1.5);
 }
 .right{
     float:right;
     width:50%;
     padding-left:5%;
 }
-.container {
-    margin-top:2em;
+
+.home-container {
+    margin-top:2rem;
     img {
-        max-width:80%;
+        max-width:70%;
         margin:0 5%vh;
     }
 }
 
 .large-shop-text{
-    font-size: 1.5em;
+    font-size: calc($font-size* 1.5);
     color:white;
 }
 
 .small {
-    font-size:0.5em;
+    font-size:calc($font-size * 0.7);
+    line-height:$font-size;
+    text-align: left;
 }
 
-ul{
+ul {
     list-style-type: "*   ";
     text-align: left;
     font-size: 1.2em;
@@ -126,7 +113,7 @@ ul{
 }
 
 // used for clickable image links on bottom of home page
-.grid-container {
+.home-grid {
     clear: both;
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -136,7 +123,7 @@ ul{
     justify-content: space-between;
 }
 
-.grid-item {
+.home-item {
     background-color: #787f54;
     border:2px solid gray;
     border-radius: 10%;
@@ -174,19 +161,26 @@ td {
     grid-template-columns: repeat(3,1fr);
     margin:3%;
     background-color: $shop-color;
-    &-item {
-        border:2px solid $shop-color;
+    .products-grid-item {
         text-align: center;
         font-weight: 800;
-        font-size: 1.2em;
-        line-height: 1.2em;
+        text-align: center;
+        // font-size: 1.2em;
+        // line-height: 1.2em;
         img {
             width:80%;
             height:80%;
 
         }
     }
-
+    .small {
+        font-size:calc($font-size * 0.7);
+        line-height:$font-size;
+        text-align: left;
+    }
+    p {
+        margin-bottom: calc($line-height * 0.4);
+    }
 }
 
 //=================================================
@@ -194,26 +188,29 @@ td {
 
 .vtr-grid-container {
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     margin: 50px;
     background-color: $shop-color;
     text-align: center;
+    align-items: center;
 
     p {
-        margin-bottom: 1.3em;
+        margin-bottom: 1em;
     }
 
-    .vtr-grid-item-2left{
+    .vtr-grid-item-2left {
         grid-column: 1 / span 2;
         text-align: left;
-        padding:20%;
         padding:20px;
-        // color: white;
+        ul {
+            line-height: 1em;
+        }
     }
+
     .vtr-grid-item-1right{
         grid-column: 3;
-        padding:20px;
+        // padding:20px;
         // color: white;
         img {
             width:100%;
@@ -237,59 +234,66 @@ td {
 
 .cu-grid-container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 0.8fr 1.2fr 1fr;
         gap: 50px;
-        margin: 20px;
         background-color: $shop-color;
         text-align: center;
-    
-        p {
-            margin-bottom: 1.3em;
-        }
 }
-//=================================================
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
+.cu-email {
+    text-align: right;
+}
 
-  footer {
+footer {
     .footer-grid-container{
         display:grid;
         grid-template-columns: 2fr 1fr 1fr;
-        margin:50px;
-        gap:50px;
-        line-height: 2.5rem;
-        font-size: $font-size;
-
+        margin:0 5%;
+        
         .footer-item{
             text-align: left;
             img{
                 width:60%;
             }
-            h2 {
-                margin-top:0;
+            h3 {
+                margin:0;
             }
         }
     }
-  }
+}
+   
+
+//=================================================
+    /* Style all font awesome icons */
+    .fa {
+        padding: 12px;
+        font-size: 20px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;  }
+      
+      /* Add a hover effect */
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      /* Set a specific color for each brand */
+      /* Facebook */
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      /* Twitter */
+      .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        
+        /* Instagram */
+        .fa-instagram {
+            background: #125688;
+            color: white;
+          }
 
 
 
