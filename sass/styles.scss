@@ -60,7 +60,7 @@ header {
 // General styling classes
 .center{
     padding:0 2rem;
-    margin: 0 auto;
+    margin: 2em auto;
     text-align: center;
     font-size: 2em;
     line-height:1.2em;
@@ -88,13 +88,14 @@ header {
 
 .small {
     font-size: 0.4em;
+    text-align:left;
 }
 
 ul {
     list-style-type: "\1F44D   ";
     text-align: left;
-    font-size: 1.2em;
-    line-height: 2em;
+    font-size: 1em;
+    line-height:1em;
     display: inline-block;
     margin:0;
 }
@@ -142,45 +143,48 @@ td {
     padding-right:1em;
 }
 
-// grid for products
+// grid for products & services
 .products-grid {
     display: grid;
-    gap: 50px;
+    gap: 3rem;
     grid-template-columns: repeat(3,1fr);
     margin:3%;
     background-color: $shop-color;
     .products-grid-item {
         text-align: center;
         font-weight: 800;
-        text-align: center;
         img {
             width:80%;
             height:auto;
-            border: 2px dashed green;
-
         }
     }
-    .small {
-        font-size:calc($font-size * 0.7);
-        line-height:$font-size;
-        text-align: left;
-    }
     p {
-        margin-bottom: calc($line-height * 0.4);
+        margin-bottom:0;
     }
+    
 }
 
+.po-list {
+    ul {
+        list-style-type: disc;
+        margin:0;
+        padding:0;
+        font-size:0.8em;
+        line-height: 1.2em;;
+    }
+}
 //=================================================
 // grid for volunteering page
 
 .vtr-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-    margin: 50px;
+    gap: 5%;
+    // margin: 5%;
+    font-size: 1.5em;
     background-color: $shop-color;
     text-align: center;
-    align-items: center;
+    // align-items: center;
 
     p {
         margin-bottom: 1em;
@@ -189,16 +193,15 @@ td {
     .vtr-grid-item-2left {
         grid-column: 1 / span 2;
         text-align: left;
-        padding:20px;
+        padding:1.5em;
         ul {
-            line-height: 1em;
+            line-height: 1.2em;
+            list-style-type: disc;
         }
     }
 
     .vtr-grid-item-1right{
         grid-column: 3;
-        // padding:20px;
-        // color: white;
         img {
             width:100%;
         }
@@ -212,7 +215,6 @@ td {
     .vtr-grid-item-2right{
         grid-column: 2 / span 2;
         padding:10%;
-        // color: white;
         text-align: left;
         }
 }
@@ -221,28 +223,35 @@ td {
 
 .cu-grid-container{
         display: grid;
-        grid-template-columns: 0.8fr 1.2fr 1fr;
-        gap: 50px;
+        margin-top:2em;
+        grid-template-columns: 20% 45% 35%;
+        line-height:1.5em;
+        // gap: 1em;
         background-color: $shop-color;
         text-align: center;
+        a {
+            padding-left:1em;
+        }
+
+
+.cu-grid-item {
+    text-align: left;
+    padding-left: 1em;
 }
 .cu-email {
     text-align: right;
+    padding-right:4em;
 }
 
 footer {
-    .footer-grid-container{
+    .footer-grid-container {
         display:grid;
         grid-template-columns: 2fr 1fr 1fr;
-        margin:0 5%;
-        
-        .footer-item{
-            text-align: left;
-            img{
+        .fi {
+            img {
                 width:60%;
-            }
-            h3 {
-                margin:0;
+                height:auto;
+                margin:0 auto;
             }
         }
     }
@@ -252,12 +261,12 @@ footer {
 //=================================================
     /* Style all font awesome icons */
     .fa {
-        padding: 12px;
-        font-size: 20px;
-        width: 2vw;
+        padding: 1em;
+        font-size: 6em;
         text-align: center;
         text-decoration: none;
-        margin: 5px 2px;  }
+        margin: 5px 2px;
+      }
       
       /* Add a hover effect */
       .fa:hover {
@@ -281,10 +290,3 @@ footer {
             background: #125688;
             color: white;
           }
-
-
-
-
-
-
-
