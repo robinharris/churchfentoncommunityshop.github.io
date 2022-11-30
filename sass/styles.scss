@@ -1,53 +1,45 @@
 // Variables
 
 $font-family: 'Dancing Script', cursive;
-$font-size: 1.7rem;
+$font-size: 2vw;
 $line-height: calc($font-size*1.5);
 $color:white;
 $shop-color:#B3B995;
-$background-color: $shop-color;
 //========================================
 
-
-body {
+:root {
     background-color: $shop-color;
     font-family:$font-family;
     font-size: $font-size;
     line-height:$line-height;
     color:$color;
-
-    p{
-        padding: 0;
-        margin: 0;
-    }
+    width: 100vw;
+    margin:0;
+    padding:0;
 }
 
 nav {
     ul {
-        list-style-type: none;
-        overflow: hidden;
-        text-align: right;
-        height: 3rem;
         display: block;
-        font-size: $font-size;
+        text-align: right;
+        list-style-type: none;
     }
     li  {
-        display: inline;
+        display: inline-block;
     }
     a {
+        display: inline-block;
         color: $color;
         text-decoration: none;
-        display: inline-block;
         text-align: center;
         padding:0 20px;
         &:hover{
-            background-color:#787f54;
+            background-color:#adc04e;
         }
     }
 }
 
 header {
-    clear:both;
     display:grid;
     grid-template-columns: 1fr 1fr;
     background-color: $shop-color;
@@ -56,55 +48,50 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc($font-size * 2.5);
+    font-size: 3em;
     font-weight:900;
     color: white;
     >img {
         width:100%;
-        height:auto;
     }
 }
 
 
 // General styling classes
 .center{
+    padding:0 2rem;
+    margin: 0 auto;
     text-align: center;
-    line-height: 1.5em;
+    font-size: 2em;
+    line-height:1.2em;
+    list-style-position: outside;
+    width:70%;
 }
 .left{
     float:left;
     width:35%;
-    margin-left:5rem;
-    font-size: calc($font-size*1.4);
-    line-height: calc($font-size*1.5);
+    padding:0 2em;
+    font-size: 2em;
+    line-height:1.2em;
+    img {
+        max-width:70%;
+    }
 }
 .right{
     float:right;
-    width:50%;
-    padding-left:5%;
-}
-
-.home-container {
-    margin-top:2rem;
+    width:40%;
+    margin:4em auto;
     img {
-        max-width:70%;
-        margin:0 5%vh;
+        max-width:90%;
     }
 }
 
-.large-shop-text{
-    font-size: calc($font-size* 1.5);
-    color:white;
-}
-
 .small {
-    font-size:calc($font-size * 0.7);
-    line-height:$font-size;
-    text-align: left;
+    font-size: 0.4em;
 }
 
 ul {
-    list-style-type: "*   ";
+    list-style-type: "\1F44D   ";
     text-align: left;
     font-size: 1.2em;
     line-height: 2em;
@@ -116,42 +103,43 @@ ul {
 .home-grid {
     clear: both;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,30%);
     gap:5%;
-    padding:0 10;
-    margin:5% 10%;
+    margin:0 7%;
     justify-content: space-between;
 }
 
 .home-item {
+    margin:2em 0;
     background-color: #787f54;
-    border:2px solid gray;
+    border:2px solid white;
     border-radius: 10%;
     text-align: center;
-    padding:10px;
-    margin-top: 50px;
 a {
     text-decoration: none;
+    font-size:4vw;
     color:white;
     :hover{
         opacity: 0.7;
     }
 }
 img {
-    max-width: 80%;
-    min-width: 80%;
+    padding-top:1em;
+    max-width:70%;
+    max-height:48%;
 }
 }
 // ================================================
 table {
     justify-content: left;
-    margin:auto;
     color:white;
+    margin:1em auto;
 }
 
 td {
     text-align: left;
-    padding-right:20px;
+    font-size: 1em;
+    padding-right:1em;
 }
 
 // grid for products
@@ -165,11 +153,10 @@ td {
         text-align: center;
         font-weight: 800;
         text-align: center;
-        // font-size: 1.2em;
-        // line-height: 1.2em;
         img {
             width:80%;
-            height:80%;
+            height:auto;
+            border: 2px dashed green;
 
         }
     }
@@ -267,7 +254,7 @@ footer {
     .fa {
         padding: 12px;
         font-size: 20px;
-        width: 40px;
+        width: 2vw;
         text-align: center;
         text-decoration: none;
         margin: 5px 2px;  }

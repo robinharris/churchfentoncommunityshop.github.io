@@ -1,39 +1,35 @@
-body {
+@charset "UTF-8";
+:root {
   background-color: #B3B995;
   font-family: "Dancing Script", cursive;
-  font-size: 1.7rem;
-  line-height: 2.55rem;
+  font-size: 2vw;
+  line-height: 3vw;
   color: white;
-}
-body p {
-  padding: 0;
+  width: 100vw;
   margin: 0;
+  padding: 0;
 }
 
 nav ul {
-  list-style-type: none;
-  overflow: hidden;
-  text-align: right;
-  height: 3rem;
   display: block;
-  font-size: 1.7rem;
+  text-align: right;
+  list-style-type: none;
 }
 nav li {
-  display: inline;
+  display: inline-block;
 }
 nav a {
+  display: inline-block;
   color: white;
   text-decoration: none;
-  display: inline-block;
   text-align: center;
   padding: 0 20px;
 }
 nav a:hover {
-  background-color: #787f54;
+  background-color: #adc04e;
 }
 
 header {
-  clear: both;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #B3B995;
@@ -43,55 +39,50 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4.25rem;
+  font-size: 3em;
   font-weight: 900;
   color: white;
 }
 .header-grid-item > img {
   width: 100%;
-  height: auto;
 }
 
 .center {
+  padding: 0 2rem;
+  margin: 0 auto;
   text-align: center;
-  line-height: 1.5em;
+  font-size: 2em;
+  line-height: 1.2em;
+  list-style-position: outside;
+  width: 70%;
 }
 
 .left {
   float: left;
   width: 35%;
-  margin-left: 5rem;
-  font-size: 2.38rem;
-  line-height: 2.55rem;
+  padding: 0 2em;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+.left img {
+  max-width: 70%;
 }
 
 .right {
   float: right;
-  width: 50%;
-  padding-left: 5%;
+  width: 40%;
+  margin: 4em auto;
 }
-
-.home-container {
-  margin-top: 2rem;
-}
-.home-container img {
-  max-width: 70%;
-  margin: 0 5% vh;
-}
-
-.large-shop-text {
-  font-size: 2.55rem;
-  color: white;
+.right img {
+  max-width: 90%;
 }
 
 .small {
-  font-size: 1.19rem;
-  line-height: 1.7rem;
-  text-align: left;
+  font-size: 0.4em;
 }
 
 ul {
-  list-style-type: "*   ";
+  list-style-type: "👍  ";
   text-align: left;
   font-size: 1.2em;
   line-height: 2em;
@@ -102,42 +93,43 @@ ul {
 .home-grid {
   clear: both;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 30%);
   gap: 5%;
-  padding: 0 10;
-  margin: 5% 10%;
+  margin: 0 7%;
   justify-content: space-between;
 }
 
 .home-item {
+  margin: 2em 0;
   background-color: #787f54;
-  border: 2px solid gray;
+  border: 2px solid white;
   border-radius: 10%;
   text-align: center;
-  padding: 10px;
-  margin-top: 50px;
 }
 .home-item a {
   text-decoration: none;
+  font-size: 4vw;
   color: white;
 }
 .home-item a :hover {
   opacity: 0.7;
 }
 .home-item img {
-  max-width: 80%;
-  min-width: 80%;
+  padding-top: 1em;
+  max-width: 70%;
+  max-height: 48%;
 }
 
 table {
   justify-content: left;
-  margin: auto;
   color: white;
+  margin: 1em auto;
 }
 
 td {
   text-align: left;
-  padding-right: 20px;
+  font-size: 1em;
+  padding-right: 1em;
 }
 
 .products-grid {
@@ -154,15 +146,16 @@ td {
 }
 .products-grid .products-grid-item img {
   width: 80%;
-  height: 80%;
+  height: auto;
+  border: 2px dashed green;
 }
 .products-grid .small {
-  font-size: 1.19rem;
-  line-height: 1.7rem;
+  font-size: 1.4vw;
+  line-height: 2vw;
   text-align: left;
 }
 .products-grid p {
-  margin-bottom: 1.02rem;
+  margin-bottom: 1.2vw;
 }
 
 .vtr-grid-container {
@@ -234,7 +227,7 @@ footer .footer-grid-container .footer-item h3 {
 .fa {
   padding: 12px;
   font-size: 20px;
-  width: 40px;
+  width: 2vw;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
