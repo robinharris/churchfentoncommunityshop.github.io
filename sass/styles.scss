@@ -32,9 +32,9 @@ nav {
         color: $color;
         text-decoration: none;
         text-align: center;
-        padding:0 20px;
+        padding:0 1em 1em 1em;
         &:hover{
-            background-color:#adc04e;
+            background-color:#787f54;
         }
     }
 }
@@ -59,8 +59,8 @@ header {
 
 // General styling classes
 .center{
-    padding:0 2rem;
-    margin: 2em auto;
+    padding:0 1rem;
+    margin: 1em auto;
     text-align: center;
     font-size: 2em;
     line-height:1.2em;
@@ -71,7 +71,7 @@ header {
     float:left;
     width:35%;
     padding:0 2em;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height:1.2em;
     img {
         max-width:70%;
@@ -95,7 +95,7 @@ ul {
     list-style-type: "\1F44D   ";
     text-align: left;
     font-size: 1em;
-    line-height:1em;
+    line-height:1.5em;
     display: inline-block;
     margin:0;
 }
@@ -179,42 +179,32 @@ td {
 .vtr-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5%;
-    // margin: 5%;
+    gap: 0 2%;
     font-size: 1.5em;
+    line-height: 1.2em;
     background-color: $shop-color;
-    text-align: center;
-    // align-items: center;
-
-    p {
-        margin-bottom: 1em;
+    padding:0 1.5em;
+    img {
+        width:100%;
+        padding: 2em 0;
     }
 
     .vtr-grid-item-2left {
         grid-column: 1 / span 2;
         text-align: left;
-        padding:1.5em;
         ul {
-            line-height: 1.2em;
             list-style-type: disc;
         }
     }
 
     .vtr-grid-item-1right{
         grid-column: 3;
-        img {
-            width:100%;
-        }
     }
     .vtr-grid-item-1left{
         grid-column: 1;
-        img {
-            width:100%;
-        }
     }
     .vtr-grid-item-2right{
         grid-column: 2 / span 2;
-        padding:10%;
         text-align: left;
         }
 }
@@ -232,7 +222,7 @@ td {
         a {
             padding-left:1em;
         }
-
+}
 
 .cu-grid-item {
     text-align: left;
@@ -241,6 +231,11 @@ td {
 .cu-email {
     text-align: right;
     padding-right:4em;
+}
+
+.address {
+    font-size:1.4em;
+    line-height:1.4em;
 }
 
 footer {
