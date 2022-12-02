@@ -77,12 +77,12 @@ header {
   max-width: 90%;
 }
 
-.small {
+.small-text {
   font-size: 0.4em;
   text-align: left;
 }
 
-ul {
+ul.home {
   list-style-type: "👍  ";
   text-align: left;
   font-size: 1em;
@@ -148,11 +148,8 @@ td {
   width: 80%;
   height: auto;
 }
-.products-grid p {
-  margin-bottom: 0;
-}
 
-.po-list ul {
+.regular-list ul {
   list-style-type: disc;
   margin: 0;
   padding: 0;

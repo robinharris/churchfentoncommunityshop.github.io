@@ -86,12 +86,12 @@ header {
     }
 }
 
-.small {
+.small-text {
     font-size: 0.4em;
     text-align:left;
 }
 
-ul {
+ul.home {
     list-style-type: "\1F44D   ";
     text-align: left;
     font-size: 1em;
@@ -158,13 +158,9 @@ td {
             height:auto;
         }
     }
-    p {
-        margin-bottom:0;
-    }
-    
 }
 
-.po-list {
+.regular-list {
     ul {
         list-style-type: disc;
         margin:0;
