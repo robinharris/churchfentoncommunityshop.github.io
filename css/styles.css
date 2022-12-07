@@ -62,12 +62,11 @@ header {
 
 .center {
   padding: 0 1rem;
-  margin: 1.5em auto;
+  margin: 1.5em 0;
   text-align: center;
   font-size: 2em;
   line-height: 2em;
   list-style-position: outside;
-  width: 70%;
 }
 
 .left {
