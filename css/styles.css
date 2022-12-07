@@ -1,13 +1,21 @@
 @charset "UTF-8";
 :root {
   background-color: #B3B995;
-  font-family: "Dancing Script", cursive;
-  font-size: 2vw;
-  line-height: 3vw;
+  font-family: Lucida, cursive;
+  font-size: 1rem;
+  line-height: 1rem;
   color: white;
   width: 100vw;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+:root img {
+  max-width: 100%;
+}
+
+.home-img {
+  border: 5px solid white;
 }
 
 nav ul {
@@ -47,34 +55,31 @@ header {
   width: 100%;
 }
 
+.container-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
 .center {
   padding: 0 1rem;
-  margin: 1em auto;
+  margin: 1.5em auto;
   text-align: center;
   font-size: 2em;
-  line-height: 1.2em;
+  line-height: 2em;
   list-style-position: outside;
   width: 70%;
 }
 
 .left {
-  float: left;
   width: 35%;
   padding: 0 2em;
-  font-size: 1.5em;
-  line-height: 1.2em;
-}
-.left img {
-  max-width: 70%;
+  font-size: 2rem;
+  line-height: 2.3rem;
 }
 
 .right {
-  float: right;
   width: 40%;
-  margin: 4em auto;
-}
-.right img {
-  max-width: 90%;
+  margin: 0 auto;
 }
 
 .small-text {
@@ -83,16 +88,18 @@ header {
 }
 
 ul.home {
-  list-style-type: "👍  ";
+  list-style-type: "🌼     ";
   text-align: left;
   font-size: 1em;
   line-height: 1.5em;
   display: inline-block;
   margin: 0;
 }
+ul.home ::marker {
+  font-size: 0.5em;
+}
 
 .home-grid {
-  clear: both;
   display: grid;
   grid-template-columns: repeat(3, 30%);
   gap: 5%;

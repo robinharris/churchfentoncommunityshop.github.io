@@ -1,9 +1,9 @@
 // Variables
 
 // $font-family: 'Dancing Script', cursive;
-$font-family: 'Caveat',serif;
-$font-size: 2vw;
-$line-height: calc($font-size*1.5);
+$font-family: Lucida, cursive;
+$font-size: 1rem;
+$line-height: 1rem;
 $color:white;
 $shop-color:#B3B995;
 //========================================
@@ -17,6 +17,12 @@ $shop-color:#B3B995;
     width: 100vw;
     margin:0;
     padding:0;
+    img {max-width: 100%;}
+    box-sizing: border-box;
+}
+
+.home-img {
+    border:5px solid white;
 }
 
 nav {
@@ -57,34 +63,34 @@ header {
     }
 }
 
+// flex containter
+.container-flex {
+    display:flex;
+    align-items: flex-start;
+}
 
 // General styling classes
 .center{
     padding:0 1rem;
-    margin: 1em auto;
+    margin: 1.5em auto;
     text-align: center;
     font-size: 2em;
-    line-height:1.2em;
+    line-height:2em;
     list-style-position: outside;
     width:70%;
 }
-.left{
-    float:left;
+
+.left {
     width:35%;
     padding:0 2em;
-    font-size: 1.5em;
-    line-height:1.2em;
-    img {
-        max-width:70%;
-    }
+    font-size: 2rem;
+    line-height:2.3rem;
 }
+
 .right{
-    float:right;
+    // float:right;
     width:40%;
-    margin:4em auto;
-    img {
-        max-width:90%;
-    }
+    margin:0 auto;
 }
 
 .small-text {
@@ -93,7 +99,10 @@ header {
 }
 
 ul.home {
-    list-style-type: "\1F44D   ";
+    list-style-type: "\1F33C      ";
+    ::marker{
+        font-size: 0.5em;
+    }
     text-align: left;
     font-size: 1em;
     line-height:1.5em;
@@ -103,7 +112,6 @@ ul.home {
 
 // used for clickable image links on bottom of home page
 .home-grid {
-    clear: both;
     display:grid;
     grid-template-columns: repeat(3,30%);
     gap:5%;
@@ -118,6 +126,7 @@ ul.home {
     border-radius: 10%;
     text-align: center;
 a {
+    // display:inline-block;
     text-decoration: none;
     font-size:4vw;
     color:white;
