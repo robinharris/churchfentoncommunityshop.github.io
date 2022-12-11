@@ -2,143 +2,154 @@
 
 // $font-family: 'Dancing Script', cursive;
 $font-family: Lucida, cursive;
-$font-size: 1vw;
+$font-size: 1rem;
 $line-height: 1rem;
 $color:white;
 $shop-color:#B3B995;
-$brown:rgb(82, 43, 13);
 //========================================
 
-:root {
+html {
     background-color: $shop-color;
     font-family:$font-family;
     font-size: $font-size;
     line-height:$line-height;
     color:$color;
-    width: 100vw;
+    // width: 100vw;
     margin:0;
     padding:0;
     img {max-width: 100%;}
     box-sizing: border-box;
 }
 
-header {
-    img {
-        width:30vw;
-        // height:68px;
-    }
-
-    .header__logo {
-        flex-grow:0;
-        flex-shrink: 1;
-    }
-}
-
-.row--header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.home-img {
+    border:5px solid white;
 }
 
 nav {
-    .nav__list {
-        display:flex;
+    ul {
+        display: block;
+        text-align: right;
         list-style-type: none;
-        padding-right: 1rem;
-        font-size: 2rem;;
-
     }
-    li + li {
-        padding-left:2rem;
+    li  {
+        display: inline-block;
     }
-    
     a {
-        color: $brown;
+        display: inline-block;
+        color: $color;
         text-decoration: none;
         text-align: center;
+        padding:0 1em 1em 1em;
         &:hover{
             background-color:#787f54;
         }
     }
 }
 
-.container {
-    width:90%;
-    max-width:1100px;
-    margin: 0 auto;
+header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $shop-color;
 }
-
-
-.hero {
-    img {border:4px solid white}
-    text-align: center;
-    font-size: 2em;
-    line-height: 1.6em;
-    p {margin:1em 0}
-    
-}
-
-.row {
-    display:flex;
-    margin:0 auto;
-}
-
-.col {
-    width:100%;
-}
-
-.kps {
-    font-size: 2em;
-    line-height:1.3em;
-    background-color: white;
-    color:$brown;
-    padding:0 1em;
-    box-shadow: 10px 10px 5px grey;
-}
-
-.sidebar {
-    font-size:0.6em;
-    line-height: 1.2em;
-}
-.qavs {
-    margin:3em auto;
-    font-size: 3rem;
-    line-height:1.3em;
-    p {
-        padding-right:1.8em;
+.header-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight:900;
+    color: white;
+    >img {
+        width:100%;
     }
-}
-
-h2{
-    text-align: center;
-    font-size: 5em;
-    line-height: 1.5rem;
-    font-weight: 900;
 }
 
 // flex containter
 .container-flex {
     display:flex;
-    // align-items: flex-start;
+    align-items: flex-start;
 }
 
+// General styling classes
+.center{
+    padding:0 1rem;
+    margin: 1.5em 0;
+    text-align: center;
+    font-size: 2em;
+    line-height:2em;
+    list-style-position: outside;
+    // width:70%;
+}
+
+.left {
+    width:35%;
+    padding:0 2em;
+    font-size: 2rem;
+    line-height:2.3rem;
+}
+
+.right{
+    // float:right;
+    width:40%;
+    margin:0 auto;
+}
 
 .small-text {
-    font-size: 0.5em;
+    font-size: 0.4em;
     text-align:left;
 }
 
+ul.home {
+    list-style-type: "\1F33C      ";
+    ::marker{
+        font-size: 0.5em;
+    }
+    text-align: left;
+    font-size: 1em;
+    line-height:1.5em;
+    display: inline-block;
+    margin:0;
+}
+
+// used for clickable image links on bottom of home page
+.home-grid {
+    display:grid;
+    grid-template-columns: repeat(3,30%);
+    gap:5%;
+    margin:0 7%;
+    justify-content: space-between;
+}
+
+.home-item {
+    margin:2em 0;
+    background-color: #787f54;
+    border:2px solid white;
+    border-radius: 10%;
+    text-align: center;
+a {
+    // display:inline-block;
+    text-decoration: none;
+    font-size:4vw;
+    color:white;
+    :hover{
+        opacity: 0.7;
+    }
+}
+img {
+    padding-top:1em;
+    max-width:70%;
+    max-height:48%;
+}
+}
 // ================================================
 table {
     justify-content: left;
     color:white;
     margin:1em auto;
-    line-height: 2.8rem;
 }
 
 td {
     text-align: left;
-    font-size: 3em;
+    font-size: 1em;
     padding-right:1em;
 }
 
@@ -156,13 +167,6 @@ td {
             width:80%;
             height:auto;
         }
-        p {
-            text-align: left;
-        }
-        img {
-            max-width: 350px;
-            max-height: 280px;
-        }
     }
 }
 
@@ -171,19 +175,10 @@ td {
         list-style-type: disc;
         margin:0;
         padding:0;
-        font-size:1em;
-        line-height: 2em;
-        text-align: left;
+        font-size:0.8em;
+        line-height: 1.2em;;
     }
 }
-
-.img__control {
-    display:block;
-    margin:0 auto;
-    max-width:80%;
-    border:3px solid red;
-}
-
 //=================================================
 // grid for volunteering page
 
@@ -254,15 +249,10 @@ footer {
         display:grid;
         grid-template-columns: 2fr 1fr 1fr;
         .fi {
-            text-align: center;
             img {
                 width:60%;
                 height:auto;
                 margin:0 auto;
-            }
-            .address {
-                font-size: 1.5em;
-                line-height: 1.2em;
             }
         }
     }

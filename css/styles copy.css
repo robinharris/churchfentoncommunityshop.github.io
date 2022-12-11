@@ -1,0 +1,264 @@
+@charset "UTF-8";
+html {
+  background-color: #B3B995;
+  font-family: Lucida, cursive;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html img {
+  max-width: 100%;
+}
+
+.home-img {
+  border: 5px solid white;
+}
+
+nav ul {
+  display: block;
+  text-align: right;
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 1em 1em 1em;
+}
+nav a:hover {
+  background-color: #787f54;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #B3B995;
+}
+
+.header-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+}
+.header-grid-item > img {
+  width: 100%;
+}
+
+.container-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.center {
+  padding: 0 1rem;
+  margin: 1.5em 0;
+  text-align: center;
+  font-size: 2em;
+  line-height: 2em;
+  list-style-position: outside;
+}
+
+.left {
+  width: 35%;
+  padding: 0 2em;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.right {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.small-text {
+  font-size: 0.4em;
+  text-align: left;
+}
+
+ul.home {
+  list-style-type: "🌼     ";
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5em;
+  display: inline-block;
+  margin: 0;
+}
+ul.home ::marker {
+  font-size: 0.5em;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 5%;
+  margin: 0 7%;
+  justify-content: space-between;
+}
+
+.home-item {
+  margin: 2em 0;
+  background-color: #787f54;
+  border: 2px solid white;
+  border-radius: 10%;
+  text-align: center;
+}
+.home-item a {
+  text-decoration: none;
+  font-size: 4vw;
+  color: white;
+}
+.home-item a :hover {
+  opacity: 0.7;
+}
+.home-item img {
+  padding-top: 1em;
+  max-width: 70%;
+  max-height: 48%;
+}
+
+table {
+  justify-content: left;
+  color: white;
+  margin: 1em auto;
+}
+
+td {
+  text-align: left;
+  font-size: 1em;
+  padding-right: 1em;
+}
+
+.products-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3%;
+  background-color: #B3B995;
+}
+.products-grid .products-grid-item {
+  text-align: center;
+  font-weight: 800;
+}
+.products-grid .products-grid-item img {
+  width: 80%;
+  height: auto;
+}
+
+.regular-list ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.vtr-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 2%;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  background-color: #B3B995;
+  padding: 0 1.5em;
+}
+.vtr-grid-container img {
+  width: 100%;
+  padding: 2em 0;
+}
+.vtr-grid-container .vtr-grid-item-2left {
+  grid-column: 1/span 2;
+  text-align: left;
+}
+.vtr-grid-container .vtr-grid-item-2left ul {
+  list-style-type: disc;
+}
+.vtr-grid-container .vtr-grid-item-1right {
+  grid-column: 3;
+}
+.vtr-grid-container .vtr-grid-item-1left {
+  grid-column: 1;
+}
+.vtr-grid-container .vtr-grid-item-2right {
+  grid-column: 2/span 2;
+  text-align: left;
+}
+
+.cu-grid-container {
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: 20% 45% 35%;
+  line-height: 1.5em;
+  background-color: #B3B995;
+  text-align: center;
+}
+.cu-grid-container a {
+  padding-left: 1em;
+}
+
+.cu-grid-item {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.cu-email {
+  text-align: right;
+  padding-right: 4em;
+}
+
+.address {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+
+footer .footer-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+footer .footer-grid-container .fi img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 1em;
+  font-size: 6em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}/*# sourceMappingURL=styles copy.css.map */
