@@ -241,39 +241,38 @@ td {
 .cu-grid-container {
   display: grid;
   margin-top: 5rem;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 40% 25% 30%;
   line-height: 1.5em;
   background-color: #B3B995;
   text-align: center;
 }
 .cu-grid-container a {
-  padding-left: 1em;
+  margin-left:3rem;
 }
 
 .cu-grid-item {
   text-align: left;
-  padding-left: 1em;
 }
 
 .cu-email {
-  text-align: center;
-  padding-right: 4rem;
+  text-align: left;
+  font-size:2.3rem;
 }
 
 .address {
-  padding-top:5rem;
-  padding-left: 5rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  text-align: center;
+  padding-top:2.5rem;
+  padding-left: 6rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: left;
 }
 
 footer .footer-grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr  0.8fr 1.2fr;
 }
 footer .footer-grid-container .fi {
-  text-align: center;
+  text-align: left;
 }
 footer .footer-grid-container .fi img {
   width: 60%;
@@ -283,14 +282,13 @@ footer .footer-grid-container .fi img {
 footer .footer-grid-container .fi .address {
   font-size: 2.5em;
   line-height: 1.5em;
+  text-align: left;
+  margin-left:3rem;
 }
 
 /* Style all font awesome icons */
 .fa {
-  padding: 1em;
-  font-size: 3rem;
-  text-align: center;
-  text-decoration: none;
+  padding: 2rem;
   margin: 5px 2px;
 }
 
