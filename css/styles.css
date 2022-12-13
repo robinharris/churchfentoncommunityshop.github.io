@@ -1,9 +1,9 @@
 :root {
   background-color: #B3B995;
-  font-family: Lucida, cursive;
+  font-family: cursive;
   font-size: 1vw;
   line-height: 1rem;
-  color: white;
+  color:#522B0D;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -114,7 +114,6 @@ h2 {
 
 table {
   justify-content: left;
-  color: white;
   margin: 1em auto;
 }
 
