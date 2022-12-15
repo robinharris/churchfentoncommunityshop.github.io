@@ -186,7 +186,7 @@ header img {
 h2 {
   text-align: center;
   font-size: 5em;
-  line-height: 1.5rem;
+  line-height: 4rem;
   font-weight: 900;
 }
 
@@ -266,6 +266,10 @@ h2 {
 .vtr-grid-container .vtr-grid-item-2right {
   grid-column: 2/span 2;
   text-align: left;
+}
+
+.vtr-grid-container p {
+  line-height: 3.5rem;
 }
 
 .cu-email {
