@@ -1,10 +1,9 @@
 :root {
   background-color: #B3B995;
-  font-family: cursive;
-  font-weight: 900;
+  font-family:  Helvetica, sans-serif, cursive;
   font-size: 1vw;
   line-height: 1rem;
-  color:#522B0D;
+  color:#2a2a2a;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -20,7 +19,7 @@
 }
 
 header {
-  margin-bottom: 3rem;
+  margin: 3rem;
 }
 
 a {
@@ -32,38 +31,87 @@ a:hover {
   opacity: 40%;
 }
 
+header img {
+  display:block;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.button--header {
+  font: inherit;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0.6rem;
+  border-radius: 100px;
+  min-width: 16rem;
+}
+
+.row--header {
+  margin-top: 3rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero {
+  width: 90%;
+  margin:0 auto;
+}
+
+.hero--text {
+  font-family: cursive;
+  font-weight: 900;
+  font-size:4rem;
+  text-align: center;
+  line-height: 5rem;
+  padding: 0 3rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 4rem;
+  font-weight: 900;
+}
+
+.small-text {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.opening-hours {
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  padding-right: 1rem;
+  border: 2px solid #2a2a2a;
+  margin-bottom: 3rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  border:2px solid #2a2a2a;
+  box-shadow: 10px 5px 5px #2a2a2a;
+}
+
+.kps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #2a2a2a;
+  color:white;
+}
+
 .container-flex {
   display:flex;
   flex-wrap: wrap;
   width:100%;
   justify-content: space-around;
-}
-
-.home p {
-  text-align: center;
-  font-size: 3rem;
-  line-height: 3rem;
-  margin: 3rem;
-}
-
-.home img {
-  display:block;
-  margin:0 auto;
-  max-height: 150px;
-  border: 4px solid white;
-}
-
-.kps {
-  display: flex;
-  text-align: center;
-  margin: 0 2rem;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  color:white;
-  margin: 1rem auto;
-  padding: 0 1rem;
 }
 
 .prods {
@@ -80,26 +128,13 @@ a:hover {
   padding: 0 1em;
 }
 
-table {
-  justify-content: left;
-  margin: 4rem 0 4rem 10%;
-}
-
-td {
-  line-height: 3.5rem;
-  text-align: left;
-  font-size: 3em;
-  padding-right: 1em;
-}
-
 button {
-  font-size: 3rem;
-  padding: 3rem;
-  margin: 2rem;
-  border-radius: 100px;
-  min-width: 20rem;
   font: inherit;
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0.6rem;
+  border-radius: 100px;
+  min-width: 16rem;
 }
 
 .prod {
@@ -127,19 +162,6 @@ button {
   border: 3px solid white;
 }
 
-header img {
-  display:block;
-  width: 50vw;
-  margin: 0 auto;
-}
-
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-  /* box-shadow: 10px 10px 5px grey; */
-}
 
 .container-flex img {
   width:30vw;
@@ -183,17 +205,7 @@ header img {
   padding:0;
 }
 
-h2 {
-  text-align: center;
-  font-size: 5em;
-  line-height: 4rem;
-  font-weight: 900;
-}
 
-.small-text {
-  font-size: 0.75rem;
-  text-align: left;
-}
 
 .regular-list ul {
   list-style-type: disc;
@@ -306,6 +318,7 @@ footer .footer-grid-container .fi img {
   margin: 0 auto;
 }
 footer .footer-grid-container .fi .address {
+  font-family: cursive;
   font-size: 2.5em;
   line-height: 1.5em;
   text-align: left;
