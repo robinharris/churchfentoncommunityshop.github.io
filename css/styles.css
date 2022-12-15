@@ -1,6 +1,7 @@
 :root {
   background-color: #B3B995;
   font-family: cursive;
+  font-weight: 900;
   font-size: 1vw;
   line-height: 1rem;
   color:#522B0D;
@@ -67,6 +68,7 @@ a:hover {
 
 .prods {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin: 0 1rem;
   justify-content: center;
@@ -171,7 +173,7 @@ header img {
 }
 
 .col {
-  max-width: 40%;
+  width: 40%;
   padding: 0 2rem;
 }
 
