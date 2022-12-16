@@ -114,18 +114,51 @@ h2 {
   justify-content: space-around;
 }
 
+.services {
+  display:inline-flex;
+  padding: 2rem;
+  font-family: Helvetica;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  border:1px solid #2a2a2a;
+  border-collapse: collapse;
+}
+
+.services p {
+  margin:0;
+  padding:0 3rem;
+}
+
+.services img {
+  padding-top: 5rem;
+  max-width: 40%;
+  align-self: flex-start;
+}
+
+.services>ul {
+  padding:0 4rem;
+  line-height: 4rem;
+}
+
+p {
+  padding: 0 2rem;
+}
+
+
 .prods {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   text-align: center;
   margin: 0 1rem;
   justify-content: center;
   align-items: top;
+  font-family: cursive;
   font-size: 2.5rem;
   line-height: 2.5rem;
-  color:#522B0D;
+  color: #2a2a2a;D;
   margin: 1rem auto;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 button {
@@ -137,35 +170,6 @@ button {
   min-width: 16rem;
 }
 
-.prod {
-  color:#522B0D;
-  background-color: #B3B995;
-  border: 3px solid white;
-
-}
-.ser {
-  color:#522B0D;
-  background-color: white;
-  border:3px solid #522B0D;
-}
-
-.vol {
-  color: white;
-  background-color: #522B0D;
-  border: 3px solid white;
-
-}
-
-.con {
-  color:#522B0D;
-  background-color: #B3B995;
-  border: 3px solid white;
-}
-
-
-.container-flex img {
-  width:30vw;
-}
 
 .row {
   display: flex;
@@ -181,30 +185,10 @@ button {
   padding: 0 1em;
 }
 
-.row--services {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 2rem;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  color:#522B0D;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 .col {
   width: 40%;
   padding: 0 2rem;
 }
-
-.services {
-  text-align: left;
-  margin: 0;
-  padding:0;
-}
-
 
 
 .regular-list ul {
@@ -260,7 +244,8 @@ button {
 
 .vtr-grid-container img {
   width: 100%;
-  padding: 2em 0;
+  padding: 2em 0 2rem 2rem;
+
 }
 .vtr-grid-container .vtr-grid-item-2left {
   grid-column: 1/span 2;
@@ -282,6 +267,7 @@ button {
 
 .vtr-grid-container p {
   line-height: 3.5rem;
+  margin-left: 4rem;
 }
 
 .cu-email {
@@ -291,9 +277,9 @@ button {
 
 .cu-email a{
   display: block;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem 0;
   color:#03599a;
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 900;
 }
 
