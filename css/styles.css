@@ -1,6 +1,6 @@
 :root {
   background-color: #B3B995;
-  font-family:  Helvetica, sans-serif, cursive;
+  font-family:  Helvetica, sans-serif;
   font-size: 1vw;
   line-height: 1rem;
   color:#2a2a2a;
@@ -59,7 +59,6 @@ header img {
 }
 
 .hero--text {
-  font-family: cursive;
   font-weight: 900;
   font-size:4rem;
   text-align: center;
@@ -100,7 +99,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: cursive;
   font-size: 2.5rem;
   line-height: 2.5rem;
   background-color: #2a2a2a;
@@ -153,7 +151,6 @@ p {
   margin: 0 1rem;
   justify-content: center;
   align-items: top;
-  font-family: cursive;
   font-size: 2.5rem;
   line-height: 2.5rem;
   color: #2a2a2a;D;
@@ -304,7 +301,6 @@ footer .footer-grid-container .fi img {
   margin: 0 auto;
 }
 footer .footer-grid-container .fi .address {
-  font-family: cursive;
   font-size: 2.5em;
   line-height: 1.5em;
   text-align: left;
