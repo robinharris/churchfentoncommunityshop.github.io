@@ -48,6 +48,18 @@ header img {
   min-width: 12rem;
 }
 
+.button--header-cream {
+  background-color: antiquewhite;
+}
+
+.button--header-grey {
+  background-color: #636060;
+}
+
+.button--header-green {
+  background-color: #65a163;
+}
+
 
 .hero {
   width: 90%;
