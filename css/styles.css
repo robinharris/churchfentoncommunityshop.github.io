@@ -116,7 +116,7 @@ header img {
 }
 
 .emblem {
-  max-width:30%;
+  width:50%; 
   margin:0.5em;
   align-self:flex-end;
   text-align: center;
@@ -125,6 +125,7 @@ header img {
 .social{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .services {
@@ -199,9 +200,9 @@ p {
 }
 
 .address {
-  padding:0 2em;
-  font-size: 0.8em;
-  line-height: 1em;
+  padding:0 0.5em;
+  font-size: 0.7em;
+  line-height: 0.9em;
   text-align: left;
 }
 
