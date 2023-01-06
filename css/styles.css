@@ -14,6 +14,14 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: 2em;
+}
+
 header {
   margin: 3rem auto;
 }
@@ -27,6 +35,12 @@ a:hover {
   opacity: 40%;
 }
 
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2em auto;
+}
+
 header img {
   display:block;
   width: 70vw;
@@ -38,7 +52,6 @@ header img {
   flex-wrap: wrap;
   margin-top: 2rem;
   padding:1rem;
-  display:flex;
   justify-content: center;
   background-color: hsl(57, 45%, 90%);
 }
@@ -50,61 +63,40 @@ header img {
   padding: 0 1rem;
 }
 
-.hero {
-  width: 90%;
-  margin:0 auto;
-}
-
 .hero--text {
   font-weight: 900;
-  font-size:1.5em;
+  font-size:1.1em;
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 2em;
-  font-weight: 900;
-  margin-top: 2em;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 2em auto;
-}
-
-.opening-hours--row {
-  display: flex;
-  padding: 0;
-}
-
-.box1{
+.box {
   width:50%;
+  margin:1rem;
+}
+
+.background-light {
+  /* width:50%; */
   margin:1rem;
   background-color:  hsl(57, 45%, 90%);
-}
-
-.box2{
-  width:50%;
-  margin:1rem;
-  background-color: #636060;
-  color: white;
-}
-.box3{
-  width:50%;
-  margin:1rem;
-  border:2px solid white;
-  color: white;
-}
-.box4{
-  width:50%;
-  margin:1rem;
-  background-color: hsl(57, 45%, 90%);
   color: #636060;
 }
-.box5{
+
+.background-medium {
+  /* width:50%; */
+  margin:1rem;
+  background-color: #B3B995;
+  color: white;
+}
+
+.background-dark {
+  /* width:50%; */
+  margin:1rem;
+  background-color: #636060;
+  /* border:2px solid white; */
+  color: white;
+}
+
+.prescription_times{
   width:100%;
   text-align: center;
   margin:1rem;
@@ -112,32 +104,27 @@ h2 {
   color: white;
 }
 
-.kps {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  text-align: left;
-  background-color: #636060;
-  color:white;
-  padding:1rem;
-  box-shadow: 10px 5px 5px #2a2a2a;
-  justify-content:left;
-
-}
-
 .row {
   display: flex;
-  justify-content: space-between;
-  border:3px solid gray;
-  /* font-size: 1em; */
+  justify-content: space-around;
+  margin:5px;
 }
 
 .row img {
-  width: 45%;
+  max-width: 50%;
   align-self: flex-start;
 }
 
-.row p {
-  width: 50%;
+.emblem {
+  max-width:30%;
+  margin:0.5em;
+  align-self:flex-end;
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
 }
 
 .services {
@@ -190,18 +177,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.footer-col {
-  width: 30%;
-}
-
-.social{
-  text-align: center;
-}
-
-.container-flex img {
-  width:auto;
-}
-
 .cu-address {
   padding:3rem;
   font-size: 3.0rem;
@@ -224,8 +199,8 @@ p {
 }
 
 .address {
-  padding-right: 1rem;
-  font-size: 0.6em;
+  padding:0 2em;
+  font-size: 0.8em;
   line-height: 1em;
   text-align: left;
 }
@@ -233,8 +208,8 @@ p {
 /* Style all font awesome icons */
 .fa {
   color: white;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 0.1em;
+  margin: 0.1em;
 }
 
 .fa-2x {
@@ -281,9 +256,9 @@ p {
   }
 
   @media (max-width:700px) {
-    .fa-2x {
-      font-size: 2rem;
-      padding: 1.5rem;
+    .fa {
+      font-size: 0.4em;
+      padding: 0.4em;
     }
     body {
       font-size: 1.2em;
