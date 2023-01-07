@@ -22,6 +22,10 @@ h2 {
   margin-top: 2em;
 }
 
+h3 {
+  margin: 1em;
+}
+
 header {
   margin: 3rem auto;
 }
@@ -75,39 +79,38 @@ header img {
 }
 
 .background-light {
-  /* width:50%; */
   margin:1rem;
   background-color:  hsl(57, 45%, 90%);
   color: #636060;
+  border: 2px solid #636060;
 }
 
 .background-medium {
-  /* width:50%; */
   margin:1rem;
   background-color: #B3B995;
   color: white;
+  border:2px solid white;
 }
 
 .background-dark {
-  /* width:50%; */
   margin:1rem;
   background-color: #636060;
-  /* border:2px solid white; */
   color: white;
+  border:2px solid white;
 }
 
-.prescription_times{
+.prescription-times {
   width:100%;
   text-align: center;
   margin:1rem;
-  background-color: #636060;
-  color: white;
+  background-color: hsl(57, 45%, 90%);
+  color: #636060;
+  border: 2px solid #636060;
 }
 
 .row {
   display: flex;
   justify-content: space-around;
-  margin:5px;
 }
 
 .row img {
@@ -128,34 +131,48 @@ header img {
   justify-content: center;
 }
 
-.services {
-  display:flex;
-  padding: 1rem;
-  border:1px solid #2a2a2a;
+.float_left {
+  clear: right;
+  float: left;
+  padding: 1em;
+  max-width: 40%;
+  height: auto;
+}
+
+.float_right {
+  clear: left;
+  float: right;
+  padding: 1em;
+  max-width: 40%;
+  height: auto;
+}
+
+.border {
+  border: 2px solid #636060;
+  margin:1em;
 }
 
 .services p {
   margin:0;
-  padding: 0 2rem;
+  font-size: 0.8em;
 }
 
-.services img {
-  max-width: 40%;
-  align-self: flex-start;
-}
 
-.services>ul {
-  line-height: 1rem;
-  padding-left:4rem;
+ul {
+  line-height: 1em;
+  padding-left:2em;
+  display: block;
+  font-size: 0.8em;
 }
 
 ul>ul {
-  padding-left:1rem;
+  padding-left:1em;
+  font-size: 1em;
 }
 
 p {
   padding: 0 0.5rem;
-  margin:1rem;
+  margin:1em;
 }
 
 .prods {
@@ -240,11 +257,15 @@ p {
   background: #125688;
 }
 
-.volunteering{
-  margin:1rem;
-  padding:1rem;
+.question {
+  font-size: 1em;
+  font-weight: 600;
 }
 
+.answer {
+  font-size: 0.8em;
+  font-weight: 300;
+}
 @media (min-width:700px) {
   body {
     font-size: 2.5rem;
