@@ -1,7 +1,7 @@
 body {
   background-color: #B3B995;
   font-family:  Georgia, serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.1;
   color:#636060;
   width: 100%;
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   margin: 2em auto;
 }
@@ -75,47 +75,46 @@ header img {
 
 .box {
   width:50%;
-  margin:1rem;
+  /* margin:1rem; */
 }
 
 .background-light {
-  margin:1rem;
   background-color:  hsl(57, 45%, 90%);
   color: #636060;
-  border: 2px solid #636060;
 }
 
 .background-medium {
-  margin:1rem;
   background-color: #B3B995;
   color: white;
-  border:2px solid white;
 }
 
 .background-dark {
-  margin:1rem;
   background-color: #636060;
   color: white;
-  border:2px solid white;
 }
 
 .prescription-times {
   width:100%;
   text-align: center;
-  margin:1rem;
-  background-color: hsl(57, 45%, 90%);
+  background-color:  hsl(57, 45%, 90%);
   color: #636060;
-  border: 2px solid #636060;
 }
 
 .row {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
+.height_fix {
+  height:20vh;
+}
+
+
 .row img {
-  max-width: 50%;
-  align-self: flex-start;
+  max-height: 80%;
+  max-width:40%;
+  margin:0 0.2em;
 }
 
 .emblem {
@@ -196,23 +195,13 @@ p {
 }
 
 .cu-address {
-  padding:3rem;
-  font-size: 3.0rem;
-  line-height: 3.0rem;
-  text-align: left;
-
-}
-.cu-email {
-  text-align: left;
-  margin: 3rem auto;
+  font-size: 1.6em;
 }
 
 .cu-email a{
   display: block;
-  padding: 1rem;
-  margin:1rem;
+  margin:1em;
   color:#03599a;
-  font-size: 2.6rem;
   font-weight: 900;
 }
 
@@ -266,16 +255,6 @@ p {
   font-size: 0.8em;
   font-weight: 300;
 }
-@media (min-width:700px) {
-  body {
-    font-size: 2.5rem;
-  }
-  .address {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-  }
-
-  }
 
   @media (max-width:700px) {
     .fa {
@@ -283,6 +262,15 @@ p {
       padding: 0.4em;
     }
     body {
+      font-size: 1.2em;
+    }
+
+    .row--header a {
+      font-size: 1em;
+      padding: 0.7em;
+    }
+
+    .cu-address {
       font-size: 1.2em;
     }
   }
