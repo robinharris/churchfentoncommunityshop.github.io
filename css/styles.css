@@ -42,7 +42,6 @@ a:hover {
 .container {
   clear: both;
   width: 100%;
-  /* max-width: 1100px; */
   margin: 2em auto;
 }
 
@@ -55,8 +54,8 @@ header img {
 .row--header {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
-  padding:1rem;
+  margin-top: 2em;
+  padding:1em;
   justify-content: center;
   background-color: hsl(57, 45%, 90%);
 }
@@ -76,7 +75,7 @@ header img {
 
 .box {
   width:50%;
-  /* margin:1rem; */
+  margin: 1em;
 }
 
 .background-light {
@@ -107,20 +106,10 @@ header img {
   align-items: center;
 }
 
-.height_fix {
-  height:20vh;
-}
-
-.img_sizing {
-  max-height: 90vh;
-  max-width: 40vh;
-}
-
-
 .row img {
   max-height: 80%;
   max-width:40%;
-  margin:0 0.2em;
+  padding: 1em;
 }
 
 .emblem {
