@@ -153,6 +153,9 @@ header img {
   .service_item {
     flex-direction: column;
   }
+  .row{
+    flex-direction: column;
+  }
 }
 
 .service_img {
