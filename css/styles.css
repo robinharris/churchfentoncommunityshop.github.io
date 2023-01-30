@@ -39,6 +39,26 @@ a:hover {
   opacity: 40%;
 }
 
+<<<<<<< HEAD
+=======
+.sticky {
+  top: 0;
+  position: sticky;
+  position:-webkit-sticky;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.button-link {
+  font-size: 1rem;
+  background-color: #636060;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+>>>>>>> f82e9d6293db20f0c8ac35f40e4a0871c3abbaad
 .container {
   clear: both;
   width: 100%;
@@ -67,12 +87,15 @@ header img {
   padding: 0 1rem;
 }
 
+<<<<<<< HEAD
 .hero--text {
   font-weight: 900;
   font-size:1.1em;
   text-align: center;
 }
 
+=======
+>>>>>>> f82e9d6293db20f0c8ac35f40e4a0871c3abbaad
 .box {
   width:50%;
   margin: 1em;
@@ -125,21 +148,37 @@ header img {
   justify-content: center;
 }
 
+<<<<<<< HEAD
+=======
+.volunteering {
+  /* overflow: hidden; */
+}
+
+>>>>>>> f82e9d6293db20f0c8ac35f40e4a0871c3abbaad
 .float_left {
   clear: right;
   float: left;
   padding: 1em;
+<<<<<<< HEAD
   max-width: 40%;
   height: auto;
+=======
+  max-width: 60%;
+>>>>>>> f82e9d6293db20f0c8ac35f40e4a0871c3abbaad
 }
 
 .float_right {
   clear: left;
   float: right;
   padding: 1em;
+<<<<<<< HEAD
   max-width: 40%;
   height: auto;
   max-height: 80%;
+=======
+  max-width: 60%;
+  /* max-height: 80%; */
+>>>>>>> f82e9d6293db20f0c8ac35f40e4a0871c3abbaad
 }
 
 .service_item {
@@ -172,7 +211,11 @@ header img {
 }
 
 ul {
+<<<<<<< HEAD
   line-height: 1em;
+=======
+  line-height: 1.3em;
+>>>>>>> f82e9d6293db20f0c8ac35f40e4a0871c3abbaad
   padding-left:2em;
   display: block;
   font-size: 0.8em;
